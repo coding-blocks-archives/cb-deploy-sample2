@@ -6,7 +6,7 @@ const host = "localhost"
 const port = "3306"
 const dbname = "sampledb1"
 
-const DB_URL = process.env.CLEARDB_DATABASE_URL ||
+const DB_URL = process.env.DATABASE_URL ||
   `mysql://${username}:${password}@${host}:${port}/${dbname}`
 
 const db = new Sequelize(DB_URL)
